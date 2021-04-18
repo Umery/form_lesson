@@ -15,10 +15,10 @@
         <div class="main-body">
           <h1 class="title">アカウント作成</h1>
           <div class="login-choices">
-            <div class="login-choice two-width">
+            <div class="login-choice side-width">
               <a href="#" class="width btn btn-a facebook">Facebookでスタート</a>
             </div>
-            <div class="login-choice two-width">
+            <div class="login-choice side-width">
               <a href="#" class="width btn btn-a google">Googleでスタート</a>
             </div>
           </div>
@@ -30,71 +30,71 @@
           </div>
           <form action="#" method="POST" class="form">
             <div class="names">
-              <div class="name">
+              <div class="name side-width">
                 <p class="label-text">名字 <span class="red-content">※</span></p>
                 <input type="text" name="last_name" class="appearance input-area" required />
               </div>
-              <div class="name">
+              <div class="name side-width">
                 <p class="label-text">名前 <span class="red-content">※</span></p>
                 <input type="text" name="first_name" class="appearance input-area" required />
               </div>
             </div>
-            <div class="margin gender">
+            <div class="margin">
               <p class="label-text width">性別</p>
               <div class="gender-contents">
                 <label class="gender-content">
-                  <input type="radio" name="gender" class="gender-input">
+                  <input type="radio" name="gender" class="gender-input" value="men">
                   <span>男性</span>
                 </label>
                 <label class="gender-content">
-                  <input type="radio" name="gender" class="gender-input">
+                  <input type="radio" name="gender" class="gender-input" value="women">
                   <span>女性</span>
                 </label>
                 <label class="gender-content">
-                  <input type="radio" name="gender" class="gender-input">
+                  <input type="radio" name="gender" class="gender-input" value="other">
                   <span>その他</span>
                 </label>
               </div>
             </div>
-            <div class="margin from two-width">
+            <div class="margin side-width">
               <p class="label-text">出身</p>
               <div class="select-area">
                 <select name="from" class="appearance input-area from-input">
-                  <option class="tokyo">東京</option>
-                  <option class="tiba">千葉</option>
-                  <option class="saitama">埼玉</option>
-                  <option class="kanagawa">神奈川</option>
+                  <option value="tokyo">東京</option>
+                  <option value="tiba">千葉</option>
+                  <option value="saitama">埼玉</option>
+                  <option value="kanagawa">神奈川</option>
                 </select>
               </div>
             </div>
-            <div class="margin mail">
+            <div class="margin">
               <p class="label-text">Eメール <span class="red-content">※</span></p>
               <input type="email" name="email" class="width appearance input-area" placeholder="ex) hoge@example.com" required />
             </div>
-            <div class="margin telephone">
+            <div class="margin">
               <p class="label-text">電話番号</p>
               <input type="tel" name="tel" class="width appearance input-area" placeholder="ex) 09012345678" />
             </div>
-            <div class="margin password">
+            <div class="margin">
               <p class="label-text">パスワード <span class="red-content">※</span></p>
               <input type="password" name="passward" class="width appearance input-area" required />
             </div>
-            <div class="margin password">
+            <div class="margin">
               <p class="label-text">パスワード(確認用) <span class="red-content">※</span></p>
               <input type="password" name="password-confirm" class="width appearance input-area" required />
             </div>
             <div class="margin hope">
               <p class="label-text">希望コース</p>
               <div class="hope-course">
-                <input type="checkbox" name="hope" id="frontend">
+                <input type="checkbox" name="hope" id="frontend" value="frontend">
                 <label class="hope-course-text" for="frontend">フロントエンド</label>
               </div>
               <div class="hope-course">
-                <input type="checkbox" name="hope" id="backend">
+                <input type="checkbox" name="hope" id="backend" value="backend">
                 <label class="hope-course-text" for="backend">バックエンド</label>
               </div>
               <div class="hope-course">
-                <input type="checkbox" name="hope" id="app">
+                <input type="checkbox" name="hope" id="app" value="app">
                 <label class="hope-course-text" for="app">アプリ</label>
               </div>
             </div>
